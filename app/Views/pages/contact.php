@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <section class="an-page-hero an-banner">
-    <img class="an-banner-media" src="<?= base_url('images/banners/contact.png') ?>" alt="Shop bay at dusk at A&amp;N Auto Repair, 2218 Mt Holly Rd, Burlington NJ" width="1280" height="720">
+    <img class="an-banner-media" src="<?= asset_url('images/banners/contact.png') ?>" alt="Shop bay at dusk at A&amp;N Auto Repair, 2218 Mt Holly Rd, Burlington NJ" width="1280" height="720">
     <div class="an-banner-overlay">
         <div class="container">
             <h1 class="fw-medium mb-2">Contact A&amp;N Auto Repair</h1>

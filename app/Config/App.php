@@ -42,6 +42,17 @@ class App extends BaseConfig
      */
     public string $indexPage = '';
 
+    public function __construct()
+    {
+        parent::__construct();
+
+        // SiteGround: pretty URLs 403 because rewrite never runs.
+        // /index.php/about-us works, so put index.php back into generated links.
+        if (function_exists('uses_project_document_root') && uses_project_document_root()) {
+            $this->indexPage = 'index.php';
+        }
+    }
+
     /**
      * --------------------------------------------------------------------------
      * URI PROTOCOL

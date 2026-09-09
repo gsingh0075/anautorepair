@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <section class="an-page-hero an-banner">
-    <img class="an-banner-media" src="<?= base_url('images/banners/services.png') ?>" alt="Service bay at A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
+    <img class="an-banner-media" src="<?= asset_url('images/banners/services.png') ?>" alt="Service bay at A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
     <div class="an-banner-overlay">
         <div class="container">
             <p class="font-small uppercase letter-spacing-1 mb-2"><a class="text-white" href="<?= site_url('services') ?>">Services</a></p>
@@ -17,7 +17,7 @@
         <div class="row g-5">
             <div class="col-12 col-lg-8">
                 <div class="an-service-hero-photo mb-4">
-                    <img src="<?= base_url($service['image']) ?>" alt="<?= esc($service['alt']) ?>">
+                    <img src="<?= asset_url($service['image']) ?>" alt="<?= esc($service['alt']) ?>">
                 </div>
                 <?php foreach ($service['body'] as $paragraph): ?>
                     <p><?= esc($paragraph) ?></p>

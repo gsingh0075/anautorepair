@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <section class="an-page-hero an-banner">
-    <img class="an-banner-media" src="<?= base_url('images/banners/services.png') ?>" alt="Brake and lift work at A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
+    <img class="an-banner-media" src="<?= asset_url('images/banners/services.png') ?>" alt="Brake and lift work at A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
     <div class="an-banner-overlay">
         <div class="container">
             <h1 class="fw-medium mb-2">Auto Repair Services in Burlington, NJ</h1>
@@ -24,7 +24,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <a href="<?= site_url('services/' . $service['slug']) ?>" class="an-service-link">
                         <div class="an-service-photo">
-                            <img src="<?= base_url($service['image']) ?>" alt="<?= esc($service['alt']) ?>">
+                            <img src="<?= asset_url($service['image']) ?>" alt="<?= esc($service['alt']) ?>">
                         </div>
                         <div class="an-service-icon" aria-hidden="true"><i class="bi <?= esc($service['icon']) ?>"></i></div>
                         <h2 class="h5 fw-medium mb-2"><?= esc($service['name']) ?></h2>

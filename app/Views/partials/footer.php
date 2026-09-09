@@ -8,7 +8,7 @@ $mapQuery = rawurlencode($shop->fullAddress());
         <div class="container">
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3">
-                    <img class="an-footer-logo" src="<?= base_url('images/logo.png') ?>" alt="A&amp;N Auto Repair">
+                    <img class="an-footer-logo" src="<?= asset_url('images/logo.png') ?>" alt="A&amp;N Auto Repair">
                     <p class="mt-3 mb-0"><?= esc($shop->tagline) ?></p>
                 </div>
                 <div class="col-6 col-lg-3">

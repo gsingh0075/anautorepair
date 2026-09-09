@@ -13,3 +13,31 @@
  *
  * @see: https://codeigniter.com/user_guide/extending/common.html
  */
+
+if (! function_exists('uses_project_document_root')) {
+    /**
+     * True when Apache's document root is the project folder, not public/.
+     */
+    function uses_project_document_root(): bool
+    {
+        $docRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? '') ?: '';
+        $public  = defined('FCPATH') ? (string) realpath(FCPATH) : '';
+
+        return $docRoot !== '' && $public !== '' && $docRoot !== $public;
+    }
+}
+
+if (! function_exists('asset_url')) {
+    /**
+     * URL for files that live in public/ (CSS, JS, images).
+     * On shared hosting those files are served from /public/....
+     * Docker already points at public/.
+     */
+    function asset_url(string $path = ''): string
+    {
+        $path   = ltrim($path, '/');
+        $prefix = uses_project_document_root() ? 'public/' : '';
+
+        return base_url($prefix . $path);
+    }
+}

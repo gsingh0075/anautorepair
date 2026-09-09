@@ -7,7 +7,7 @@ $services = $shop->services();
     <div class="container">
         <div class="header-logo">
             <a href="<?= site_url('/') ?>">
-                <img src="<?= base_url('images/logo.png') ?>" alt="A&amp;N Auto Repair, Burlington NJ">
+                <img src="<?= asset_url('images/logo.png') ?>" alt="A&amp;N Auto Repair, Burlington NJ">
             </a>
         </div>
         <div class="header-menu">

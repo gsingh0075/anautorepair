@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <section class="an-page-hero an-banner">
-    <img class="an-banner-media" src="<?= base_url('images/banners/about.png') ?>" alt="Mechanic at the workbench at A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
+    <img class="an-banner-media" src="<?= asset_url('images/banners/about.png') ?>" alt="Mechanic at the workbench at A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
     <div class="an-banner-overlay">
         <div class="container">
             <h1 class="fw-medium mb-2">About A&amp;N Auto Repair</h1>

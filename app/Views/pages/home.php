@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <section class="an-hero an-banner">
-    <img class="an-banner-media" src="<?= base_url('images/banners/home.png') ?>" alt="Cars on lifts inside A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
+    <img class="an-banner-media" src="<?= asset_url('images/banners/home.png') ?>" alt="Cars on lifts inside A&amp;N Auto Repair in Burlington, NJ" width="1280" height="720">
     <div class="an-banner-overlay">
         <div class="container">
             <div class="row align-items-center g-4">
@@ -33,7 +33,7 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <a href="<?= site_url('services/' . $service['slug']) ?>" class="an-service-link">
                         <div class="an-service-photo">
-                            <img src="<?= base_url($service['image']) ?>" alt="<?= esc($service['alt']) ?>">
+                            <img src="<?= asset_url($service['image']) ?>" alt="<?= esc($service['alt']) ?>">
                         </div>
                         <div class="an-service-icon" aria-hidden="true"><i class="bi <?= esc($service['icon']) ?>"></i></div>
                         <h5 class="fw-medium mb-2"><?= esc($service['name']) ?></h5>
@@ -71,7 +71,7 @@
 </section>
 
 <section class="an-page-hero an-banner an-cta-banner">
-    <img class="an-banner-media" src="<?= base_url('images/banners/contact.png') ?>" alt="Open bay at A&amp;N Auto Repair on Mt Holly Rd in Burlington, NJ" width="1280" height="720">
+    <img class="an-banner-media" src="<?= asset_url('images/banners/contact.png') ?>" alt="Open bay at A&amp;N Auto Repair on Mt Holly Rd in Burlington, NJ" width="1280" height="720">
     <div class="an-banner-overlay">
         <div class="container text-center">
             <h2 class="mb-3">Need the car looked at?</h2>

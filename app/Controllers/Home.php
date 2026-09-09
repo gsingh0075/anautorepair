@@ -35,7 +35,7 @@ class Home extends BaseController
             '@context'    => 'https://schema.org',
             '@type'       => 'AutoRepair',
             'name'        => $shop->name,
-            'image'       => base_url('images/logo.png'),
+            'image'       => asset_url('images/logo.png'),
             'url'         => site_url('/'),
             'telephone'   => $shop->phoneTel,
             'description' => $shop->tagline,
