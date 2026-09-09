@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://local.anautorepair.com:8007/sitemap.xml
